@@ -22,6 +22,7 @@ Route::namespace('Country')->group(function(){
     Route::get('country','CountryController@showCountry');
     Route::get('country/{id}','CountryController@countryById');
     Route::post('country','CountryController@countrySave');
-    //Route::get('country','CountryController@showCountry');
+    Route::put('country/{id}','CountryController@countryUpdate');
+    Route::delete('country/{id}','CountryController@countryDelete');
     
 });
