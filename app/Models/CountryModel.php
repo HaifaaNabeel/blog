@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class CountryModel extends Model
 {
     //
-    public $timestamps=false;
     protected $table="_z_country";
+    public $timestamps = false;
     protected $filtable=[
         "iso",
         'name',

@@ -21,7 +21,7 @@ Route::namespace('Country')->group(function(){
 
     Route::get('country','CountryController@showCountry');
     Route::get('country/{id}','CountryController@countryById');
-    //Route::get('country','CountryController@showCountry');
+    Route::post('country','CountryController@countrySave');
     //Route::get('country','CountryController@showCountry');
     
 });
