@@ -20,4 +20,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::namespace('Country')->group(function(){
 
     Route::get('country','CountryController@showCountry');
+    Route::get('country/{id}','CountryController@countryById');
+    //Route::get('country','CountryController@showCountry');
+    //Route::get('country','CountryController@showCountry');
+    
 });
